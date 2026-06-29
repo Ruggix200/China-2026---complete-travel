@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cina 2026 · Itinerario interattivo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero" id="top">
+    <nav class="nav">
+      <a class="brand" href="#top"><span>中</span> Cina 2026</a>
+      <button class="menu-toggle" aria-label="Apri menu">☰</button>
+      <div class="nav-links">
+        <a href="#itinerario">Itinerario</a>
+        <a href="#mappa">Rotta</a>
+        <a href="#tips">Consigli</a>
+      </div>
+    </nav>
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">Shanghai · Suzhou · Xi'an · Pechino</p>
+        <h1>Un viaggio moderno tra skyline, giardini classici e capitali imperiali.</h1>
+        <p>Itinerario giorno per giorno senza date né orari precisi: solo durate, spostamenti, tappe da non perdere e immagini evocative dei luoghi.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#itinerario">Esplora il viaggio</a>
+          <a class="button ghost" href="#mappa">Vedi la rotta</a>
+        </div>
+      </section>
+      <aside class="hero-card">
+        <span>Durata</span>
+        <strong>10 giorni</strong>
+        <small>Da Shanghai a Pechino, con tappe a Suzhou, Xi'an e Grande Muraglia.</small>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section intro">
+      <div>
+        <p class="eyebrow">Mood del sito</p>
+        <h2>Palette neutra, dettagli Cina contemporanea.</h2>
+      </div>
+      <p>Avorio, pietra, inchiostro, tè e rosso lacca: un'estetica elegante per lasciare spazio alle foto e alla narrazione del viaggio.</p>
+    </section>
+
+    <section class="route" id="mappa" aria-label="Rotta del viaggio">
+      <article><span>01</span><strong>Shanghai</strong><small>Skyline, Bund, giardini, food street</small></article>
+      <article><span>02</span><strong>Suzhou</strong><small>Giardini UNESCO e canali</small></article>
+      <article><span>03</span><strong>Xi'an</strong><small>Terracotta e mura antiche</small></article>
+      <article><span>04</span><strong>Pechino</strong><small>Città Proibita, hutong, Grande Muraglia</small></article>
+    </section>
+
+    <section class="section controls" id="itinerario">
+      <div>
+        <p class="eyebrow">Itinerario interattivo</p>
+        <h2>Filtra per città o apri ogni giornata.</h2>
+      </div>
+      <div class="filters" role="list" aria-label="Filtri città">
+        <button class="chip active" data-filter="all">Tutto</button>
+        <button class="chip" data-filter="Shanghai">Shanghai</button>
+        <button class="chip" data-filter="Suzhou">Suzhou</button>
+        <button class="chip" data-filter="Xi'an">Xi'an</button>
+        <button class="chip" data-filter="Pechino">Pechino</button>
+      </div>
+    </section>
+
+    <section class="timeline" id="timeline"></section>
+
+    <section class="section tips" id="tips">
+      <div>
+        <p class="eyebrow">Prima di partire</p>
+        <h2>Consigli rapidi</h2>
+      </div>
+      <div class="tip-grid">
+        <article><strong>Prenota in anticipo</strong><p>Crociera sul Huangpu, Città Proibita, treni veloci, Shanghai Circus World e Grande Muraglia.</p></article>
+        <article><strong>Muoviti smart</strong><p>Taxi/Didi per tratte con bagagli o tempi stretti; metro per gli spostamenti urbani più lineari.</p></article>
+        <article><strong>Ritmo sostenibile</strong><p>Alterna visite iconiche a pause in quartieri pedonali, parchi e cene scenografiche.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="placeDialog">
+    <button class="close" aria-label="Chiudi">×</button>
+    <img id="dialogImage" alt="" />
+    <div class="dialog-content">
+      <p class="eyebrow" id="dialogCity"></p>
+      <h3 id="dialogTitle"></h3>
+      <p id="dialogText"></p>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
